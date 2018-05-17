@@ -1,0 +1,43 @@
+{
+  "name": "CassandraUpdateRecord",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "CassandraDB Connection activity to update records ",
+  "version": "0.0.1",
+  "title": "CassandraDBUpdate",  
+  "ref": "github.com/dhire05/cassandraupdaterecord",
+
+  "inputs":[
+    {
+      "name": "ClusterIP",
+      "type": "string",
+      "value": "127.0.0.1"
+    },
+	{
+      "name": "Keyspace",
+      "type": "string",
+      "value": "sample"
+    },
+	{
+      "name": "TableName",
+      "type": "string",
+      "value": "employee"
+    },    
+	{
+      "name": "SET",
+      "type": "string",
+      "value": "salary = 3500"
+    },
+    {
+      "name": "Where",
+      "type": "string",
+      "value": "empid = 105"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}
