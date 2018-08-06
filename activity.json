@@ -11,27 +11,32 @@
     {
       "name": "ClusterIP",
       "type": "string",
-      "value": "127.0.0.1"
+      "value": "127.0.0.1",
+	    "required": true
     },
 	{
       "name": "Keyspace",
       "type": "string",
-      "value": "sample"
+      "value": "sample",
+		"required": true
     },
 	{
       "name": "TableName",
       "type": "string",
-      "value": "employee"
+      "value": "employee",
+		"required": true
     },    
 	{
       "name": "SET",
       "type": "string",
-      "value": "salary = 3500"
+      "value": "salary = 3500",
+		"required": true
     },
     {
       "name": "Where",
       "type": "string",
-      "value": "empid = 105"
+      "value": "empid = 105",
+	    "required": true
     }
   ],
   "outputs": [
